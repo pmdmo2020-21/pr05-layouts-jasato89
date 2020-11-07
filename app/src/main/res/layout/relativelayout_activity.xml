@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/imgBella"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitStart"
+        android:src="@drawable/header"/>
+
+    <TextView
+        android:id="@+id/tittlePlaceholder"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBella"
+        android:layout_marginLeft="14dp"
+        android:text="@string/movieTitle"/>
+    <ImageView
+        android:id="@+id/bookmarkbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBella"
+        android:layout_alignTop="@id/tittlePlaceholder"
+        android:layout_marginRight="14dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/ic_bookmark" />
+    <TextView
+        android:id="@+id/subtitlePlaceholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittlePlaceholder"
+        android:layout_marginVertical="14dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/movieSubtitle"/>
+
+    <Button
+        android:id="@+id/rentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtitlePlaceholder"
+        android:layout_marginLeft="40dp"
+        android:text="@string/movieRentPrice" />
+    <Button
+        android:id="@+id/buyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/subtitlePlaceholder"
+        android:layout_marginRight="40dp"
+        android:text="@string/movieRentPrice" />
+
+    <View
+        android:id="@+id/breakOne"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/buyBtn"
+        android:layout_marginVertical="10dp"
+        android:background="@color/gray_divider" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/roundBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakOne"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:tint="@color/white"/>
+    <TextView
+        android:id="@+id/txtRndBtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundBtn1"
+        android:layout_marginLeft="12dp"
+        android:text="242 ratings" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/roundBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakOne"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/roundBtn1"
+        android:src="@drawable/ic_family"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/txtRndBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundBtn2"
+        android:layout_marginHorizontal="50dp"
+        android:layout_toRightOf="@id/txtRndBtn1"
+        android:gravity="center_vertical"
+        android:text="Family" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/roundBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakOne"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/roundBtn2"
+        android:src="@drawable/tomato"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/txtRndBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundBtn3"
+        android:layout_toLeftOf="@id/txtRndBtn4"
+        android:layout_marginRight="75dp"
+        android:text="71%" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/roundBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakOne"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@id/roundBtn3"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_similar"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/txtRndBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roundBtn4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Similar" />
+
+    <View
+        android:id="@+id/breakTwo"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/txtRndBtn4"
+        android:layout_marginVertical="10dp"
+        android:background="@color/gray_divider" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/breakTwo"
+        android:text="@string/MovieDescription"
+        android:layout_marginHorizontal="5dp"
+        android:layout_centerVertical="true"
+
+</RelativeLayout>
