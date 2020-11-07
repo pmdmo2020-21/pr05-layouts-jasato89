@@ -26,6 +26,7 @@
         android:textAppearance="@android:style/TextAppearance.Material.Headline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgBella" />
+
     <ImageView
         android:id="@+id/imgMas"
         android:layout_width="wrap_content"
@@ -98,7 +99,6 @@
         app:tint="@color/white"
         android:layout_marginTop="10dp"/>
 
-    <!-- ESTA VISTA CORRESPONDE AL BOTÓN REDONDO -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/rndbtn3"
         android:layout_width="wrap_content"
